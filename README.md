@@ -1,7 +1,7 @@
 # oneAPI con IA para la escuela de invierno del CAPAP-H24
 
 ## Contenidos
-* En este repositorio se encuentran los códigos propuestos en el taller....
+* En este repositorio se encuentran los códigos propuestos en el taller de Intel® oneAPI para IA. Encontramos principalmente ejemplos que ilustran aceleraciones en aplicaciones escritas Python tanto en el uso de las bibliotecas para Data Science de pandas y numpy, como ejemplos de algoritmos empleados en Machine-Learning y Deep-Learning.
 
 # Setup del lab
 ## Repositorio 
@@ -202,3 +202,9 @@ user@localhost:~$ ssh myidc -L 8888:10.10.10.8:8888
 ![Imagen](figures/Intel-IDC-conection2instance.png)
 
 # Ejemplos
+
+## Cuadernos Jupyter 
+1. El uso de [pandas](Jupyter-codes/pandas.ipynb) permite realizar analítica de datos de forma ordenada y eficiente. Este cuaderno contiene información y ejemplos que ilustran la ganancia de utilizar convenientemente pandas
+2. La librería [numpy](https://numpy.org/) permite operar con datos estructurados de forma efiente como queda patente en el [tercer cuaderno de Jupyter](Jupyter-codes/numpy.ipynb)
+3. La utilización de la librería [scikit-learn](https://scikit-learn.org/) permite implementar algoritmos de Machine-Learning. La extensión [Intel® Extension for Scikit-learn](https://intel.github.io/scikit-learn-intelex/) disponible en AI Tools de oneAPI permite acelerar las operaciones realacionadas tanto en la fase de aprendizaje como inferencia. El [cuaderno](Jupyter-codes/ML_scikitlearn.ipynb) ilustra la utilización de la extensión Intel® Extension for Scikit-learn
+4. Dentro de la Toolkit AI Tools incluye también una extensión para acelerar la fase de entrenamiento e inferencia de procesos relacionados con el Deep-Learning. La [Intel® Extension for Pytorch](https://github.com/intel/intel-extension-for-pytorch) permite utilizar recursos paralelos existentes en los últimos procesadores de Intel® como la capacidades SIMD del las AVX512, de cómputo tensorial AMX o aceleradores GPU. El [cuaderno](Jupyter-codes/IntelPyTorch_GPU_InferenceOptimization_with_AMP.ipynb) ilustra las mejoras en fase de entrenamiento e inferencia haciendo uso de las Intel® Extension for Pytorch para las AMX y las GPU de alto rendimiento de Intel®
